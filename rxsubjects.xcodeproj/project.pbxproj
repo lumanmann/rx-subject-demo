@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580ADDD725346E750050F42D /* Demo2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580ADDD625346E750050F42D /* Demo2ViewController.swift */; };
 		586BCC3125345C1600EA638E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BCC3025345C1600EA638E /* AppDelegate.swift */; };
 		586BCC3325345C1600EA638E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BCC3225345C1600EA638E /* SceneDelegate.swift */; };
 		586BCC3525345C1600EA638E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BCC3425345C1600EA638E /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		2BBF8026E468063FDAECAAE4 /* Pods-rxsubjects.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxsubjects.release.xcconfig"; path = "Target Support Files/Pods-rxsubjects/Pods-rxsubjects.release.xcconfig"; sourceTree = "<group>"; };
+		580ADDD625346E750050F42D /* Demo2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo2ViewController.swift; sourceTree = "<group>"; };
 		586BCC2D25345C1600EA638E /* rxsubjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rxsubjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		586BCC3025345C1600EA638E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		586BCC3225345C1600EA638E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				586BCC3E25345C1700EA638E /* Info.plist */,
 				586BCC4B2534675400EA638E /* DemoViewModel.swift */,
 				586BCC4E2534675E00EA638E /* DemoViewController.swift */,
+				580ADDD625346E750050F42D /* Demo2ViewController.swift */,
 			);
 			path = rxsubjects;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				586BCC3125345C1600EA638E /* AppDelegate.swift in Sources */,
 				586BCC3325345C1600EA638E /* SceneDelegate.swift in Sources */,
 				586BCC4C2534675400EA638E /* DemoViewModel.swift in Sources */,
+				580ADDD725346E750050F42D /* Demo2ViewController.swift in Sources */,
 				586BCC4F2534675E00EA638E /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

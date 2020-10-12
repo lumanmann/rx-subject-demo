@@ -14,4 +14,6 @@ class DemoViewModel {
     func callAPI() {
         numberSubject.onNext(Int.random(in: 0...100))
     }
+    
+ 
 }
