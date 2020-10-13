@@ -52,19 +52,34 @@ class ViewController: UIViewController {
     }
     
     func observeStream() {
+        
+//        publishSubject.subscribe {[unowned self] (value) in
+//            print("🍎 PublishSubject Event:", value)
+//
+//            self.subjectsLabels[0].text! += "-\(value)"
+//        } onError: {[unowned self] (error) in
+//            self.subjectsLabels[0].text! += "X"
+//        } onCompleted: { [unowned self] in
+//            self.subjectsLabels[0].text! += "-|"
+//        } onDisposed: {
+//            print("PublishSubject disposed")
+//        }.disposed(by: disposeBag)
+
 
         publishSubject
-          .subscribe {[unowned self] in
-            print("🍎 PublishSubject Event:", $0)
-            guard let value = $0.element else { return }
-            self.subjectsLabels[0].text! += "-\(value)"
-            
-            if $0.isCompleted {
-                print("🌏")
+          .subscribe {[unowned self] event in
+            print("🍎 PublishSubject Event:", event)
+
+            if event.isCompleted {
                 self.subjectsLabels[0].text! += "-|"
             }
+
+            guard let value = event.element else { return }
+            self.subjectsLabels[0].text! += "-\(value)"
+
           }
           .disposed(by: disposeBag)
+
         
         
         behaviorSubject
